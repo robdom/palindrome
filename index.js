@@ -5,14 +5,6 @@ String.prototype.reverse = function() {
   return Array.from(this).reverse().join("");
 }
 
-String.prototype.blank = function() {
-  return !!(this).match(/^\s*$/);
-}
-
-Array.prototype.last = function() {
-  return this[this.length - 1];
-}
-
 // Defines a Phrase object.
 function Phrase(content) {
   this.content = content;
